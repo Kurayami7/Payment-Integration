@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
+w﻿using Microsoft.AspNetCore.Mvc;
 using Payment_Integration.Models;
 using Stripe.Checkout;
 using Stripe;
@@ -43,7 +43,7 @@ namespace Payment_Integration.Controllers
                 CancelUrl = domain + "/Home/cancel",
 
             };
-            StripeConfiguration.ApiKey = "sk_test_51OEuIwAln6MN0lfEZfbYhFEClHnAiMhsRsThJ7uuSwI57fThz5JSaGiAgbe1x8ZUc7XW5V1gXrSkiR9bA6VlHwpI00IZTSHMOz";
+            StripeConfiguration.ApiKey = "Insert your secret key/API here";
             var service = new SessionService();
             Session session = service.Create(options);
 
